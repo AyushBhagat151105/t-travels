@@ -6,37 +6,65 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80",
+    src: "/i1.png",
     quote: "Travel is the only thing you buy that makes you richer.",
   },
   {
-    src: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80",
+    src: "/i2.png",
     quote: "The journey not the arrival matters.",
   },
   {
-    src: "https://images.unsplash.com/photo-1565130838609-c3a86655db61?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80",
+    src: "/i3.png",
     quote: "To travel is to live.",
   },
   {
-    src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80",
+    src: "/i4.png",
     quote: "Life is either a daring adventure or nothing at all.",
   },
   {
-    src: "https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80",
+    src: "/i5.png",
     quote: "Adventure awaits.",
   },
   {
-    src: "https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80",
+    src: "/i6.png",
     quote: "Travel far enough, you meet yourself.",
   },
   {
-    src: "https://images.unsplash.com/photo-1473625247510-8ceb1760943f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80",
+    src: "/i7.png",
     quote: "Not all those who wander are lost.",
   },
   {
-    src: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80",
+    src: "/i8.png",
     quote:
       "The world is a book, and those who do not travel read only one page.",
+  },
+  {
+    src: "/i9.png",
+    quote: "Travel is the only thing you buy that makes you richer.",
+  },
+  {
+    src: "/i10.png",
+    quote: "The journey not the arrival matters.",
+  },
+  {
+    src: "/i11.png",
+    quote: "To travel is to live.",
+  },
+  {
+    src: "/i12.png",
+    quote: "Life is either a daring adventure or nothing at all.",
+  },
+  {
+    src: "/i13.png",
+    quote: "Adventure awaits.",
+  },
+  {
+    src: "/i14.png",
+    quote: "Travel far enough, you meet yourself.",
+  },
+  {
+    src: "/i0.jpg",
+    quote: "Travel far enough, you meet yourself.",
   },
 ];
 

@@ -34,6 +34,7 @@ const AboutUs = () => {
           journeys into reality. With years of experience, we specialize in
           offering tailored travel experiences that cater to your unique needs.
         </p>
+        <p className="leading-relaxed mt-2 text-lg text-primary">Since 2018</p>
       </motion.div>
 
       <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-6">

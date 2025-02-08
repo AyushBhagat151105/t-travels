@@ -9,6 +9,7 @@ import {
   Compass,
   CreditCard,
   Headphones,
+  Car,
 } from "lucide-react";
 
 const services = [
@@ -34,10 +35,10 @@ const services = [
     gradient: "from-orange-500/20 to-amber-500/20",
   },
   {
-    icon: Compass,
-    title: "Adventure Tours",
+    icon: Car,
+    title: "Rental Car Services",
     description:
-      "Embark on thrilling adventures with expert guides and top-rated safety measures for adrenaline seekers.",
+      "We give the Rental Car Services at the best price and with the best quality.",
     gradient: "from-red-500/20 to-pink-500/20",
   },
   {

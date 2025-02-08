@@ -8,6 +8,7 @@ import Image from "next/image";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +36,6 @@ export function Navbar() {
             className="flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
           >
-            {/* <Plane className="h-6 w-6 text-primary" /> */}
             <Image
               src="/removebg.png"
               alt="logo"
@@ -43,35 +43,79 @@ export function Navbar() {
               width={60}
               className="text-primary mt-6"
             />
-            <span className="text-xl font-bold text-primary">
+            <span className="text-[24px] md:text-[30px] font-bold text-primary">
               Tirth Travels
+            </span>
+            <Image src="/w.png" alt="w" width={20} height={20} />
+            <span className="text-sm md:text-base font-bold text-green-500 ml-4">
+              +91 99240 32328
             </span>
           </motion.div>
 
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-4 md:space-x-8">
             <nav className="hidden md:flex space-x-8">
               <a
                 href="#services"
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-foreground hover:text-primary transition-colors px-2 py-1"
               >
                 Services
               </a>
               <a
                 href="#testimonials"
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-foreground hover:text-primary transition-colors px-2 py-1"
               >
                 Testimonials
               </a>
               <a
                 href="#contact"
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-foreground hover:text-primary transition-colors px-2 py-1"
               >
                 Contact
               </a>
+              <a
+                href="#team"
+                className="text-foreground hover:text-primary transition-colors px-2 py-1"
+              >
+                Our Team
+              </a>
             </nav>
+            <button
+              className="md:hidden text-foreground text-2xl"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              ☰
+            </button>
             <ModeToggle />
           </div>
         </div>
+        {isMenuOpen && (
+          <div className="md:hidden flex flex-col space-y-2 mt-2">
+            <a
+              href="#services"
+              className="text-foreground hover:text-primary transition-colors px-2 py-1 text-lg"
+            >
+              Services
+            </a>
+            <a
+              href="#testimonials"
+              className="text-foreground hover:text-primary transition-colors px-2 py-1 text-lg"
+            >
+              Testimonials
+            </a>
+            <a
+              href="#contact"
+              className="text-foreground hover:text-primary transition-colors px-2 py-1 text-lg"
+            >
+              Contact
+            </a>
+            <a
+              href="#team"
+              className="text-foreground hover:text-primary transition-colors px-2 py-1 text-lg"
+            >
+              Our Team
+            </a>
+          </div>
+        )}
       </div>
     </motion.nav>
   );

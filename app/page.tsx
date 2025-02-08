@@ -6,6 +6,7 @@ import { Navbar } from "@/components/navbar";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import AboutUs from "@/components/sections/aboutUs";
 import Gallery from "@/components/sections/gallery";
+import Team from "@/components/sections/team";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ServicesSection />
       <TestimonialsSection />
       <AboutUs />
+      <Team />
       <Gallery />
       <ContactSection />
       <WhatsAppButton />
