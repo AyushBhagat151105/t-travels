@@ -11,6 +11,7 @@ import { useState } from "react";
 interface FormDataState {
   name: string;
   email: string;
+  contactNumber: string;
   message: string;
 }
 
@@ -18,6 +19,7 @@ export function ContactSection() {
   const [formData, setFormData] = useState<FormDataState>({
     name: "",
     email: "",
+    contactNumber: "",
     message: "",
   });
 
@@ -43,7 +45,7 @@ export function ContactSection() {
 
       if (response.ok) {
         setResponse("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", contactNumber: "", message: "" });
       } else {
         setResponse("Failed to send message.");
       }
@@ -118,6 +120,17 @@ export function ContactSection() {
                       type="email"
                       placeholder="Email Address"
                       value={formData.email}
+                      onChange={handleChange}
+                      className="h-12 bg-background transition-all duration-300 focus:ring-2 focus:ring-primary"
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Input
+                      name="contactNumber"
+                      type="tel"
+                      placeholder="Contact Number"
+                      value={formData.contactNumber}
                       onChange={handleChange}
                       className="h-12 bg-background transition-all duration-300 focus:ring-2 focus:ring-primary"
                       required
