@@ -20,11 +20,11 @@ const teamMembers = [
       "Krishna Darji is a visionary leader with a passion for innovation.",
   },
   {
-    name: "Bhaveshkumar Parekh",
-    role: "Seles Manager",
+    name: "Kiran Raval",
+    role: "Office Boy",
     image: "/i.jpg",
     testimonial:
-      "Bhaveshkumar Parekh is a visionary Seles Manager with a passion for innovation.",
+      "Kiran Raval is a professionals Office boy",
   },
 ];
 
